@@ -54,15 +54,42 @@
             url('../fonts/caudex-v15-latin-700.svg#Caudex') format('svg'); /* Legacy iOS */
 }
 
+/* Angelic Bonques-400 - latin */
+@font-face {
+    font-family: "Angelic Bonques";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Angelic Bonques"),
+           url("../fonts/Angelic\ Bonques\ Sans\ Regular.ttf") format("truetype"),
+    }
+
 // ~~~ GLOBAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 
 $font-primary: Caudex;
 $font-sub-primary: Catamaran;
+$font-title: "Angelic Bonques";
+
 
 $font-color-primary: #000;
 $font-subcolor-primary: #fff;
 $font-subtitle-color-primary: #9F9F9F;
 $btn-color: #F96300;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+}
 
 a {
     color: inherit;
@@ -122,7 +149,7 @@ ul {
     }
 }
 
-.menu {
+.nav {
 
     font-family: $font-sub-primary;
     font-style: normal;
@@ -164,7 +191,7 @@ ul {
 }
 
 @media (max-width: 605px) {
-    .menu {
+    .nav {
         font-size: 18px;
        
         &__item:not(:last-child) {
@@ -181,6 +208,211 @@ ul {
 .page {
     flex: 1 1 auto;
 }
+
+// ~~~ INRTO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+}
+
+.intro {
+    position: relative;
+    color: $font-subcolor-primary;
+
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 55px;
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        object-fit: cover;
+
+        img {
+            filter: brightness(80%)
+        }
+
+    }
+
+    &__body {
+        padding: 465px 0px 65px 0px;
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 48px;
+    }
+
+    &__subtitle {
+        font-family: $font-primary;
+        font-size: 21px;
+        line-height: 33px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+.button {
+    position: relative;
+
+    text-transform: uppercase;
+
+    width: 261px;
+    min-height: 72px;
+    background: $btn-color;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.093em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    border: 2px solid $btn-color;
+
+    img {
+        transition: .4s ease-in-out;
+        position: absolute;
+        left: 90%;
+        top: 37%;
+    }
+
+    transition: .4s ease-in-out;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.65);
+        color: $btn-color;
+        font-weight: 900;
+
+        img {
+            filter: invert(45%) sepia(20%) saturate(5592%) hue-rotate(358deg) brightness(96%) contrast(104%);
+        }
+    }
+
+}
+
+@media (max-width: 1102px) {
+    
+    .intro {
+
+        &__body {
+            flex-direction: column;
+        }
+        
+        &__img {
+            width: 100%;
+            height: 100%;
+
+            img {
+                filter: brightness(50%);
+            }
+        }
+
+        &__button {
+            margin: 20px 0px 0px 0px;
+        }
+
+
+    }
+}
+
+@media (max-width: 678px) {
+    .intro {
+        &__body {
+            flex-direction: column;
+            padding: 255px 0px 30px 0px;
+        }
+        &__button {
+            width: 100%;
+        }
+
+        &__img {
+            img {
+                object-position: top;
+                filter: brightness(40%);
+            }
+        }
+    }
+}
+
+// ~~~ MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+.menu {
+
+    &__body {
+        margin: 66px 0px 20px 0px;
+    }
+
+    &__title {
+        margin: 0px auto;
+    }
+
+}
+
+.title-block {
+
+    max-width: 593px;
+    flex-wrap: wrap;
+    
+    font-family: $font-primary;       
+    font-weight: 400;
+
+
+    &__title {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    
+        font-size: 42px;
+        line-height: 54px;
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+
+        font-size: 21px;
+        line-height: 27px;
+        color: $font-subtitle-color-primary;
+    }
+}
+
+@media (max-width: 678px) {
+
+    .menu {
+
+        &__body {
+            margin: 33px 0px 10px 0px;
+        }
+    }
+
+}
+
 
 // ~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 
