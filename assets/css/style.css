@@ -252,5 +252,49 @@ ul {
 @media (max-width: 678px) {
   .menu__body {
     margin: 33px 0px 10px 0px; } }
+.slider {
+  margin: 40px auto;
+  color: #fff;
+  width: 100%;
+  overflow: hidden; }
+  .slider__line {
+    display: flex;
+    flex-direction: row;
+    transition: 1s ease; }
+  .slider__card {
+    max-width: 400px;
+    max-height: 551px;
+    position: relative; }
+  .slider__card:nth-child(3n+2) {
+    margin: 0px 22.5px; }
+  .slider__info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .slider__title {
+    max-width: 180px;
+    font-family: "Angelic Bonques";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .slider__subtitle {
+    max-width: 300px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+    text-align: center; }
+  .slider__img {
+    filter: brightness(70%); }
 
 /*# sourceMappingURL=style.css.map */
