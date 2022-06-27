@@ -5,7 +5,7 @@ let width = document.querySelector(".slider").offsetWidth;
 
 let count = 0;
 
-document.querySelector(".slider-next").addEventListener("click", () => {
+document.querySelector(".button-next").addEventListener("click", () => {
     count+=3;
     if (count >= sliderImages.length ) {
         count = 0;
@@ -13,7 +13,7 @@ document.querySelector(".slider-next").addEventListener("click", () => {
     rollSlide(count);
 });
 
-document.querySelector(".slider-prev").addEventListener("click", () => {
+document.querySelector(".button-prev").addEventListener("click", () => {
     count-=3;
     if (count < 0 ) {
         count = sliderImages.length-3;

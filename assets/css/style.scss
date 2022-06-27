@@ -417,12 +417,10 @@ ul {
 
 .slider {
 
+    position: relative;
     margin: 40px auto;
-
     color: #fff;
-
     width: 100%;
-
     overflow: hidden;
     
     &__line {
@@ -433,7 +431,7 @@ ul {
     }
 
     &__card {
-        max-width: 400px;
+        width: 400px;
         max-height: 551px;
 
         position: relative;
@@ -442,9 +440,6 @@ ul {
 
     &__card:nth-child(3n+2) {
         margin: 0px 22.5px;
-    }
-
-    &__img {
     }
 
     &__info {
@@ -492,7 +487,266 @@ ul {
         filter: brightness(70%);
     }
 
+    &__button {
+        border: none;
+        background: rgba(0, 0, 0, 0.10);
+
+        width: 5%;
+        height: 100%;
+
+        transition: .4s ease-in-out;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.40);
+        }
+    }
 }
+
+.button {
+    &-prev {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 3;
+    }
+
+    &-next {
+        position: absolute;
+        top: 0px;
+        left: 95%;
+        z-index: 3;
+    }
+}
+
+@media (max-width: 1311px) {
+    .menu__title {
+        display: none;
+    }
+    .slider {
+        display: none;
+        // &__card {
+        //     width: 700px;
+        //     height: 500px;
+            
+        // }
+
+        // &__info {
+        //     width: 50%;
+        // }
+
+        // &__img {
+        //     position: absolute;
+        //     left: 0px;
+          
+        //     width: 100%;
+        //     height: 50%;
+        //     top: 0px;
+        //     filter: brightness(70%);
+        // }
+
+        &__card {
+            margin: 0px 10%;
+        }
+    }
+}
+
+.slidersub {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__title {
+        position: relative;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        color: #545554;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: -10%;
+            top: 45px;
+            width: 120%;
+            height: 2px;
+            background: #545554;
+        }
+    }
+}
+
+// ~~~ BOOK ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+.book {
+
+    margin: 70px 0px 0px 0px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        margin: 0px 0px 40px 0px;
+    }
+
+    &__imgbody {
+
+    }
+
+    &__subimg {
+        width: 530px;
+        height: 360px;
+
+        background: rgba(249, 99, 0, 0.2);
+
+    }
+
+    &__info {
+        text-align: center;
+        padding: 0px 50px 40px 50px;
+    }
+
+    &__title {
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 166%;
+
+    }
+
+    &__button {
+        margin: 0px auto;
+        max-width: 210px;
+        min-height: 65px;
+        color: #fff;
+
+        font-family: $font-sub-primary;
+        font-style: normal;
+        font-weight: 500;
+
+    
+        &:hover {
+            background: #fff;
+        }
+
+        img {
+            top: 35%;
+        }
+    }
+}
+
+.img-party {
+    margin: 0px 60px 60px 0px;
+}
+
+.img-dine {
+    margin: 0px 0px 60px 60px;
+}
+
+
+.leftmarDiny {
+    left: 16.8%;
+}
+
+.party-sub {
+    position: absolute;
+
+    top: 80px;
+    left: 65px;
+}
+
+.dine-sub {
+    position: absolute;
+
+    top: 80px;
+    left: 45px;
+}
+
+@media (max-width: 1337px) {
+    .book {
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+        &__imgbody {
+            width: 100%;
+            margin: 0px auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 70%;
+            }
+        }
+
+        &__info {
+            padding: 0px 15% 40px;
+        }
+
+        &__text {
+            font-size: 21px;
+        }
+
+        &__button {
+            margin: 0px auto;
+            width: 100%;
+        }
+    }
+
+    .img-party {
+        margin: 0px 0px 60px 0px;
+    }
+    
+    .img-dine {
+        margin: 0px 0px 60px 0px;
+    }
+    
+}
+
+@media (max-width: 675px) {
+    .book {
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+        &__imgbody {
+            width: 100%;
+            margin: 0px auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 90%;
+            }
+        }
+
+        &__info {
+            padding: 0px 5% 20px;
+        }
+
+        &__button {
+            margin: 0px 5%;
+            max-width: none;
+            width: 90%;
+        }
+    }
+
+    .img-party {
+        margin: 0px 0px 20px 0px;
+    }
+    
+    .img-dine {
+        margin: 0px 0px 20px 0px;
+    }
+    
+}
+
+
 
 
 // ~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
