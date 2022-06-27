@@ -850,6 +850,10 @@ ul {
     }
 }
 
+.chef__img-hiden {
+    display: none;
+}
+
 @media (max-width: 1105px) {
     .chef {
         &__quote {
@@ -892,8 +896,7 @@ ul {
 
 @media (max-width: 789px) {
     .chef {
-
-        margin: 20px 0px;
+        margin: 20px 25px;
 
         &__container {
             display: flex;
@@ -901,42 +904,76 @@ ul {
             justify-content: center;
         }
 
+        &__info {
+            width: 100%;
+            margin: 0px ;
+        }
+
         &__title {
             max-width: none;
-            width: 100%;
+            text-align: center;
         }
 
         &__subtitle {
             max-width: none;
-            width: 100%;
+            text-align: center;
         }
 
         &__quote {
-            max-width: 322px;
+            text-align: center;
+            max-width: none;
+            width: 80%;
             min-height: 212px;
             padding: 15px 25px;
+
+            h3 {
+                max-width: none;
+            }
+
+            p {
+                max-width: none;
+                font-size: 21px;
+            }
         }
+
         &__radial {
-            width: 168px;
-            height: 159px;
+            width: 154px;
+            height: 150px;
     
-            top: 75%;
+            top: 90%;
             left: 0%;
             z-index: -1;
+        }
+
+        &__img {
+            display: none;
         }
     }
 
     .quote {
-        position: static;
+        margin: 0px auto;
+        position: relative;
+        left: 0px;
+        top: 0px;
         &__komas {
-            display: none;
-        }
+            display: block;
+            left: 70%;
+            top: -5%;
 
-        img {
-            width: 12.22px;
-            height: 18.62px;
+            img {
+                width: 18px;
+                height: 27px;
+            }
         }
     }
+
+    .chef__img-hiden {
+        display: block;
+        width: 90%;
+        
+        margin: 0px auto 20px auto;
+    }
+    
 }
 
 
