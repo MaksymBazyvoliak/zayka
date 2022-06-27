@@ -387,13 +387,13 @@ ul {
 
 .party-sub {
   position: absolute;
-  top: 80px;
-  left: 65px; }
+  top: 0px;
+  left: 0px; }
 
 .dine-sub {
   position: absolute;
-  top: 80px;
-  left: 45px; }
+  top: 0px;
+  left: 0px; }
 
 @media (max-width: 1337px) {
   .book__container {
@@ -444,5 +444,126 @@ ul {
 
   .img-dine {
     margin: 0px 0px 20px 0px; } }
+.chef {
+  margin: 90px 0px; }
+  .chef__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative; }
+  .chef__info {
+    margin: 0px 50px;
+    width: 55%; }
+  .chef__title {
+    max-width: 475px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 54px; }
+  .chef__subtitle {
+    margin: 20px 0px;
+    max-width: 475px;
+    color: #9F9F9F;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 27px; }
+  .chef__quote {
+    max-width: 322px;
+    min-height: 212px;
+    padding: 35px 50px;
+    background: #FFEAC9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .chef__img {
+    margin: 0px 50px;
+    width: 40%;
+    height: auto; }
+  .chef__radial {
+    position: absolute;
+    width: 168px;
+    height: 159px;
+    top: 64%;
+    left: 20%; }
+
+.quote {
+  position: absolute;
+  top: 32%;
+  left: 28%;
+  z-index: 1; }
+  .quote__title {
+    text-transform: capitalize;
+    max-width: 300px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px; }
+  .quote__name {
+    max-width: 300px;
+    margin: 10px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px; }
+  .quote__komas {
+    position: absolute;
+    top: -10%;
+    left: 35%; }
+  .quote img {
+    width: 24.45px;
+    height: 37.25px; }
+
+@media (max-width: 1105px) {
+  .chef__quote {
+    max-width: 322px;
+    min-height: 212px;
+    padding: 15px 25px; } }
+@media (max-width: 946px) {
+  .chef__quote {
+    max-width: 322px;
+    min-height: 212px;
+    padding: 15px 25px; }
+  .chef__radial {
+    width: 168px;
+    height: 159px;
+    top: 75%;
+    left: 0%;
+    z-index: -1; }
+
+  .quote {
+    position: static; }
+    .quote__komas {
+      display: none; }
+    .quote img {
+      width: 12.22px;
+      height: 18.62px; } }
+@media (max-width: 789px) {
+  .chef {
+    margin: 20px 0px; }
+    .chef__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .chef__title {
+      max-width: none;
+      width: 100%; }
+    .chef__subtitle {
+      max-width: none;
+      width: 100%; }
+    .chef__quote {
+      max-width: 322px;
+      min-height: 212px;
+      padding: 15px 25px; }
+    .chef__radial {
+      width: 168px;
+      height: 159px;
+      top: 75%;
+      left: 0%;
+      z-index: -1; }
+
+  .quote {
+    position: static; }
+    .quote__komas {
+      display: none; }
+    .quote img {
+      width: 12.22px;
+      height: 18.62px; } }
 
 /*# sourceMappingURL=style.css.map */

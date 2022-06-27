@@ -652,15 +652,15 @@ ul {
 .party-sub {
     position: absolute;
 
-    top: 80px;
-    left: 65px;
+    top: 0px;
+    left: 0px;
 }
 
 .dine-sub {
     position: absolute;
 
-    top: 80px;
-    left: 45px;
+    top: 0px;
+    left: 0px;
 }
 
 @media (max-width: 1337px) {
@@ -744,6 +744,199 @@ ul {
         margin: 0px 0px 20px 0px;
     }
     
+}
+
+// ~~~ CHEF ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+
+.chef {
+
+    margin: 90px 0px;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        position: relative;
+    }
+
+    &__info {
+
+        margin: 0px 50px;
+        width: 55%;
+    }
+
+    &__title {
+        max-width: 475px;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 54px;
+    }
+
+    &__subtitle {
+        margin: 20px 0px;
+        max-width: 475px;
+        color: #9F9F9F;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+    &__quote {
+        max-width: 322px;
+        min-height: 212px;
+
+        padding: 35px 50px;
+
+        background: #FFEAC9;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__img {
+        margin: 0px 50px;
+
+        width: 40%;
+        height: auto;
+    }
+
+    &__radial {
+        position: absolute;
+
+        width: 168px;
+        height: 159px;
+
+        top: 64%;
+        left: 20%;
+    }
+}
+
+.quote {
+    position: absolute;
+
+    top: 32%;
+    left: 28%;
+
+    z-index: 1;
+
+    &__title {
+        text-transform: capitalize;
+        max-width: 300px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    &__name {
+        max-width: 300px;
+        margin: 10px 0px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    &__komas {
+        position: absolute;
+        top: -10%;
+        left: 35%;
+    }
+
+    img {
+        width: 24.45px;
+        height: 37.25px;
+    }
+}
+
+@media (max-width: 1105px) {
+    .chef {
+        &__quote {
+            max-width: 322px;
+            min-height: 212px;
+            padding: 15px 25px;
+        }
+    }
+}
+
+@media (max-width: 946px) {
+    .chef {
+        &__quote {
+            max-width: 322px;
+            min-height: 212px;
+            padding: 15px 25px;
+        }
+        &__radial {
+            width: 168px;
+            height: 159px;
+    
+            top: 75%;
+            left: 0%;
+            z-index: -1;
+        }
+    }
+
+    .quote {
+        position: static;
+        &__komas {
+            display: none;
+        }
+
+        img {
+            width: 12.22px;
+            height: 18.62px;
+        }
+    }
+}
+
+@media (max-width: 789px) {
+    .chef {
+
+        margin: 20px 0px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__title {
+            max-width: none;
+            width: 100%;
+        }
+
+        &__subtitle {
+            max-width: none;
+            width: 100%;
+        }
+
+        &__quote {
+            max-width: 322px;
+            min-height: 212px;
+            padding: 15px 25px;
+        }
+        &__radial {
+            width: 168px;
+            height: 159px;
+    
+            top: 75%;
+            left: 0%;
+            z-index: -1;
+        }
+    }
+
+    .quote {
+        position: static;
+        &__komas {
+            display: none;
+        }
+
+        img {
+            width: 12.22px;
+            height: 18.62px;
+        }
+    }
 }
 
 
