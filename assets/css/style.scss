@@ -976,6 +976,67 @@ ul {
     
 }
 
+// ~~~ SPECIALS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+.specials {
+
+    &__menu {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    &__dieshes {
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+        flex-direction: row;
+
+        margin: 0px 0px 40px 0px;
+    }
+
+    &__info {
+        max-width: 70%;
+        min-height: 55px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: left;
+    }
+
+    &__name {
+        width: 100%;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    &__description {
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+
+        color: #9F9F9F;
+    }
+
+    &__dashes {
+        width: 35%;
+        height: 12px;
+        margin: 0px 20px;
+        
+        border-top: 2px dashed #9b9b9b;
+    }
+
+    &__price {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+}
 
 
 

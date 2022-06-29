@@ -590,5 +590,43 @@ ul {
     display: block;
     width: 90%;
     margin: 0px auto 20px auto; } }
+.specials__menu {
+  display: flex;
+  justify-content: left;
+  flex-direction: column; }
+.specials__dieshes {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  margin: 0px 0px 40px 0px; }
+.specials__info {
+  max-width: 70%;
+  min-height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: left; }
+.specials__name {
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px; }
+.specials__description {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #9F9F9F; }
+.specials__dashes {
+  width: 35%;
+  height: 12px;
+  margin: 0px 20px;
+  border-top: 2px dashed #9b9b9b; }
+.specials__price {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px; }
 
 /*# sourceMappingURL=style.css.map */
