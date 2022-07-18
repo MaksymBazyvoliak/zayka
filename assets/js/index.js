@@ -25,3 +25,24 @@ function rollSlide(count) {
     sliderLine.style.transform = "translate(-" + count/3 * width + "px)";
 }
 
+// SLIDER BAR
+
+const sliderBlocks = [...document.querySelectorAll(".sliderRoom__img")];
+
+document.querySelector(".next").addEventListener("click", () => {
+
+    sliderBlocks.forEach( item => {
+        let skip = false;
+        item.classList.forEach( clazz => {
+            if ( clazz === "active" && !skip) {
+                item.classList.toggle("active");
+                const nextItem = sliderBlocks[sliderBlocks.indexOf(item)+1];
+                nextItem.classList.toggle("active");
+                skip = true
+            } else {
+                skip = false;
+            }
+        })
+    });
+
+});
