@@ -663,6 +663,7 @@ ul {
   color: #fff;
   text-align: center; }
   .sliderRoom__body {
+    margin: 0px 0px 70px 0px;
     padding: 190px 0px;
     display: flex;
     flex-direction: column;
@@ -696,5 +697,78 @@ ul {
 
 .active {
   display: block; }
+
+.footer {
+  background: #181818;
+  color: #fff;
+  padding: 70px 0px 0px 0px; }
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .footer__line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 80px 0px; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: "Angelic Bonques";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 157.41%; }
+  .footer__contact h1 {
+    text-align: right; }
+  .footer__info:nth-child(3n) {
+    margin: 0px 0px 30px 0px; }
+  .footer__info {
+    text-align: right;
+    font-family: 'Caudex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 157.41%; }
+  .footer__copyright {
+    margin: 20px auto;
+    width: 90%; }
+    .footer__copyright p {
+      text-align: center;
+      position: relative; }
+      .footer__copyright p::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: -10px;
+        height: 1px;
+        background: #545554; }
+
+@media (max-width: 755px) {
+  .footer {
+    padding: 0px; }
+    .footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+    .footer__line {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px 0px 30px 0px; }
+    .footer__line > * {
+      text-align: center;
+      padding: 40px 0px 0px 0px; }
+    .footer__contact h1 {
+      text-align: center; }
+    .footer__contact > * {
+      text-align: center; } }
+.links {
+  display: flex; }
+  .links__item {
+    padding: 5px 12px;
+    border: 2px solid #fff; }
+  .links__item:not(:last-child) {
+    margin-right: 18px; }
 
 /*# sourceMappingURL=style.css.map */
